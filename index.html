@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Dhruvudiii ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bgMusic" src="music.mp3" loop></audio>
+
+  <div class="aurora"></div>
+  <div class="stars" id="stars"></div>
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <button id="musicBtn" class="music-btn" aria-label="Play or pause music">♪</button>
+
+  <div class="progress">
+    <div id="progressFill"></div>
+  </div>
+
+  <main class="app">
+    <!-- PAGE 1 -->
+    <section class="page active" data-page="1">
+      <div class="orb orb-pink"></div>
+      <div class="orb orb-blue"></div>
+
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="kicker">A secret surprise for Dhruvudiii</p>
+          <h1><span id="herNameHero">For My Favourite Calm in My Chaos</span></h1>
+          <p class="hero-sub">
+            I made this little world only for you. No crowd, no pressure, just a surprise from my heart.
+          </p>
+
+          <div class="code-card">
+            <p>Enter the secret code</p>
+            <div class="pin-row">
+              <input id="secretCode" maxlength="30" placeholder="Enter secret code" autocomplete="off" />
+              <button id="unlockBtn">Unlock Surprise ❤️</button>
+            </div>
+            <small id="codeHint">Secret code hint: Try her full name ❤️</small>
+          </div>
+        </div>
+
+        <div class="phone-frame">
+          <div class="phone-top"></div>
+          <div class="phone-screen">
+            <div class="mini-date">Today</div>
+            <div class="notification">
+              <span>❤️</span>
+              <div>
+                <b>Someone made something for you</b>
+                <p>Tap unlock to open the surprise</p>
+              </div>
+            </div>
+            <div class="big-heart">❤</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page" data-page="2">
+      <div class="center-wrap">
+        <p class="kicker">Page 1 / The envelope</p>
+        <h2>A Letter I Was Too Shy To Say Directly</h2>
+
+        <div class="envelope-scene">
+          <button id="openEnvelope" class="envelope" aria-label="Open envelope">
+            <div class="flap"></div>
+            <div class="letter-preview">Open me</div>
+          </button>
+
+          <div id="letter" class="letter hidden">
+            <p id="letterText"></p>
+            <button class="next-btn" data-next>Continue the story</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page" data-page="3">
+      <div class="split-page">
+        <div>
+          <p class="kicker">Page 2 / Our little timeline</p>
+          <h2>Somehow, You Became My Favourite Chapter</h2>
+          <p class="muted">
+            Not every story starts perfectly. Some stories grow slowly through jokes, fights, care, silence, and random moments.
+          </p>
+        </div>
+
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page" data-page="4">
+      <div class="center-wrap wide">
+        <p class="kicker">Page 3 / Photo wall</p>
+        <h2>My Favourite Kind of Pretty</h2>
+        <p class="muted photo-wall-subtitle">Some photos are just photos, and then there are photos that make me stop for a second and smile like an idiot.</p>
+
+        <div class="polaroid-wall">
+          <div class="polaroid tilt-left">
+            <img id="photo1" alt="Memory 1" />
+            <div class="photo-placeholder">Add photo1.jpg</div>
+            <p id="caption1"></p>
+          </div>
+
+          <div class="polaroid tilt-right">
+            <img id="photo2" alt="Memory 2" />
+            <div class="photo-placeholder">Add photo2.jpg</div>
+            <p id="caption2"></p>
+          </div>
+
+          <div class="polaroid tilt-left small-top">
+            <img id="photo3" alt="Memory 3" />
+            <div class="photo-placeholder">Add photo3.jpg</div>
+            <p id="caption3"></p>
+          </div>
+
+          <div class="polaroid tilt-right small-bottom">
+            <img id="photo4" alt="Memory 4" />
+            <div class="photo-placeholder">Add photo4.jpg</div>
+            <p id="caption4"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 5 -->
+    <section class="page" data-page="5">
+      <div class="chat-layout">
+        <div>
+          <p class="kicker">Page 4 / Things I notice</p>
+          <h2>The Little Things I Notice About You</h2>
+          <p class="muted">
+            This is not copied from any romantic quote page. This is the kind of thing I would actually say to you.
+          </p>
+        </div>
+
+        <div class="chat-phone">
+          <div class="chat-header">
+            <div class="avatar">❤</div>
+            <div>
+              <b id="herNameChat">Dhruvudiii</b>
+              <small>online in my heart</small>
+            </div>
+          </div>
+          <div id="chatMessages" class="chat-messages"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 6 -->
+    <section class="page" data-page="6">
+      <div class="center-wrap wide">
+        <p class="kicker">Page 5 / Reasons</p>
+        <h2>Why I Choose You</h2>
+        <div class="reason-wheel" id="reasonWheel"></div>
+      </div>
+    </section>
+
+    <!-- PAGE 7 -->
+    <section class="page" data-page="7">
+      <div class="dream-layout">
+        <div class="dream-card">
+          <p class="kicker">Page 6 / My promise</p>
+          <h2>I Don’t Want Perfect. I Want Real.</h2>
+          <p id="promiseText"></p>
+        </div>
+
+        <div class="planet-scene">
+          <div class="planet"></div>
+          <div class="ring"></div>
+          <div class="moon moon-one"></div>
+          <div class="moon moon-two"></div>
+          <p>tiny universe<br/>for us</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 8 -->
+    <section class="page proposal-page" data-page="8">
+      <div class="proposal-card">
+        <p class="kicker">Final page / The real question</p>
+        <h2 id="proposalTitle"></h2>
+        <p id="proposalMessage"></p>
+
+        <div class="proposal-actions">
+          <button id="yesBtn" class="yes-btn">Yes, obviously ❤️</button>
+          <button id="noBtn" class="no-btn">No 😭</button>
+        </div>
+
+        <div id="finalAnswer" class="final-answer hidden">
+          <h3 id="finalHeading"></h3>
+          <p id="finalText"></p>
+          <a id="whatsappLink" target="_blank" rel="noopener" class="send-answer">Send me your answer</a>
+        </div>
+      </div>
+
+      <canvas id="confettiCanvas"></canvas>
+    </section>
+
+    <div class="nav-controls">
+      <button id="prevBtn">Back</button>
+      <span id="pageCounter">1 / 8</span>
+      <button id="nextBtn">Next</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
