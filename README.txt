@@ -1,7 +1,5 @@
 Dhruvudiii Proposal Website
 
-Done by ChatGPT.
-
 Files included:
 - index.html
 - style.css
